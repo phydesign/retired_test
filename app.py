@@ -5,8 +5,7 @@ import pandas as pd
 # 設定網頁標題與圖示
 st.set_page_config(page_title="蒙地卡羅退休提領預測", page_icon="📊", layout="wide")
 
-st.title("📊 蒙地卡羅退休提領預測（隨機報酬 + 隨機通膨 + 動態提領 + 退休金流入 + 大額支出 + 匯出功能）")
-st.write("這是一個全功能隨機模型，考量**投資報酬與通膨波動、動態護欄策略、政府/公司退休金固定流入**，並可加入**一次性大額支出**、**提領下限保障**，最後可**一鍵匯出結果**。")
+st.title("📊 蒙地卡羅退休提領預測")
 st.write("---")
 
 # 1. 主頁面建立輸入參數
@@ -297,7 +296,7 @@ if submit_button:
         
         st.line_chart(chart_data)
 
-        # ----- 新增：匯出結果按鈕 -----
+        # ----- 匯出結果按鈕 -----
         st.write("")
         st.subheader("📥 匯出模擬結果")
         
